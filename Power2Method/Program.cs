@@ -12,9 +12,23 @@ namespace Power2Method
             }
         }
 
+        private static void PowerOf2UntilN(int n)
+        {
+            for (int i = 1; i <= (1 << n); i = i << 1)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
         static void Main(string[] args)
         {
+
+            PowerOf2UntilN(2);
+            Console.WriteLine("------------------------");
+            PowerOf2UntilN(3);
+            Console.WriteLine("------------------------");
             PowersOf2Until5();
+            Console.WriteLine("------------------------");
             PowersOf2Until5();
 
         }
