@@ -2,8 +2,15 @@
 
 namespace Power2Method
 {
+
+    /// <summary>
+    /// This program as 2 methods apart from the Main method that calculate the powers of 2. The main method calls the other 2 methods to display those values. 
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Calculates the power of 2 up to 5.
+        /// </summary>
         private static void PowersOf2Until5()
         {
             for (int i = 1; i <= (1 << 5); i = i << 1)
@@ -13,6 +20,10 @@ namespace Power2Method
             }
         }
 
+        /// <summary>
+        /// Calculates the powers of 2 up to specified number
+        /// </summary>
+        /// <param name="n">The maximum power of 2 to calculate.</param>
         private static void PowerOf2UntilN(int n)
         {
             for (int i = 1; i <= (1 << n); i = i << 1)
@@ -21,6 +32,11 @@ namespace Power2Method
             }
         }
 
+        /// <summary>
+        /// The method PowersOf2Until5() is called 2 times to output the values of the power of 2 up to 5
+        /// The method PowerOf2UntilN(int n)is also called to times to output the powers of 2 but on of them to 2 and the other to 3.
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
 
@@ -35,3 +51,5 @@ namespace Power2Method
         }
     }
 }
+
+
