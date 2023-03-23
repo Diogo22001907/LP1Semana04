@@ -8,6 +8,7 @@ namespace Power2Method
         {
             for (int i = 1; i <= (1 << 5); i = i << 1)
             {
+                PowerOf2UntilN(5);
                 Console.WriteLine(i);
             }
         }
